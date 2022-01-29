@@ -7,9 +7,9 @@ module.exports = ({env}) => ({
     config: {
       provider: 'cloudinary',
       providerOptions: {
-        cloud_name: 'foxleigh',
-        api_key: '162582351145869',
-        api_secret: 'CduF40wxKriO4mtiyzTi2_YHH2U',
+        cloud_name: env('CLOUDINARY_CLOUD_NAME'),
+        api_key: env('CLOUDINARY_API_KEY'),
+        api_secret: env('CLOUDINARY_API_SECRET'),
       },
       actionOptions: {
         upload: {},
