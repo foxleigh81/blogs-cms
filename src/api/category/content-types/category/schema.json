@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "singularName": "category",
+    "pluralName": "categories",
+    "displayName": "categories",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "sites": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::site.site"
+    },
+    "slug": {
+      "type": "string",
+      "regex": "[a-z-]",
+      "required": true
+    }
+  }
+}
