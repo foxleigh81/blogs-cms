@@ -12,10 +12,12 @@
   "dependencies": {
     "@strapi/plugin-i18n": "4.0.6",
     "@strapi/plugin-users-permissions": "4.0.6",
+    "@strapi/provider-upload-cloudinary": "^4.0.6",
     "@strapi/strapi": "4.0.6",
+    "add": "^2.0.6",
     "dotenv": "^14.3.2",
     "pg": "8.6.0",
-    "strapi-plugin-import-export-content": "^0.4.2"
+    "yarn": "^1.22.17"
   },
   "author": {
     "name": "A Strapi developer"
