@@ -1,7 +1,15 @@
 module.exports = ({env}) => ({
-  'import-content': {
-    enabled: true,
-    resolve: './src/plugins/import-content'
+  graphql: {
+    config: {
+      endpoint: '/graphql',
+      shadowCRUD: true,
+      playgroundAlways: false,
+      depthLimit: 7,
+      amountLimit: 100,
+      apolloServer: {
+        tracing: false,
+      },
+    },
   },
   upload: {
     config: {
