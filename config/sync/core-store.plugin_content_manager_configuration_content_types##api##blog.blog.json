@@ -1,0 +1,270 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::blog.blog",
+  "value": {
+    "uid": "api::blog.blog",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "title",
+      "defaultSortBy": "title",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "Id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "title": {
+        "edit": {
+          "label": "Title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "hero": {
+        "edit": {
+          "label": "Hero",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Hero",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "body": {
+        "edit": {
+          "label": "Body",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Body",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "sites": {
+        "edit": {
+          "label": "Sites",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "Sites",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "allow_comments": {
+        "edit": {
+          "label": "Allow comments",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Allow_comments",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "tags": {
+        "edit": {
+          "label": "Tags",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Tags",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "categories": {
+        "edit": {
+          "label": "Categories",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "Categories",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "author": {
+        "edit": {
+          "label": "Author",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "full_name"
+        },
+        "list": {
+          "label": "Author",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "override_date": {
+        "edit": {
+          "label": "Override Date",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Override_date",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "excerpt": {
+        "edit": {
+          "label": "Excerpt",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Excerpt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "canonical_site": {
+        "edit": {
+          "label": "Canonical_site",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "Canonical_site",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "CreatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "CreatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "UpdatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "UpdatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "title",
+        "hero",
+        "categories",
+        "excerpt",
+        "createdAt"
+      ],
+      "edit": [
+        [
+          {
+            "name": "title",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "hero",
+            "size": 6
+          },
+          {
+            "name": "excerpt",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "body",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "tags",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "allow_comments",
+            "size": 4
+          },
+          {
+            "name": "override_date",
+            "size": 4
+          }
+        ]
+      ],
+      "editRelations": [
+        "sites",
+        "categories",
+        "author",
+        "canonical_site"
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

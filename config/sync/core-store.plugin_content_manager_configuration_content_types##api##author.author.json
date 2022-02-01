@@ -1,0 +1,145 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::author.author",
+  "value": {
+    "uid": "api::author.author",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "full_name",
+      "defaultSortBy": "full_name",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "Id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "full_name": {
+        "edit": {
+          "label": "Full Name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Full_name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "alt_name": {
+        "edit": {
+          "label": "Alternative Name",
+          "description": "If you are posting on an anonymous blog like PFE, your alternative name will display instead of your real one. This is optional and will default to your real name if you are happy for that information to be available.",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Alt_name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "about": {
+        "edit": {
+          "label": "About",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "About",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "avatar": {
+        "edit": {
+          "label": "Avatar",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Avatar",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "CreatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "CreatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "UpdatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "UpdatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "edit": [
+        [
+          {
+            "name": "full_name",
+            "size": 6
+          },
+          {
+            "name": "alt_name",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "about",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "avatar",
+            "size": 6
+          }
+        ]
+      ],
+      "editRelations": [],
+      "list": [
+        "id",
+        "full_name",
+        "alt_name",
+        "avatar"
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
