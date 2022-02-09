@@ -1,0 +1,36 @@
+{
+  "name": "blogs",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-graphql": "4.0.6",
+    "@strapi/plugin-i18n": "4.0.6",
+    "@strapi/plugin-users-permissions": "4.0.6",
+    "@strapi/provider-upload-cloudinary": "^4.0.6",
+    "@strapi/strapi": "4.0.6",
+    "add": "^2.0.6",
+    "dotenv": "^14.3.2",
+    "pg": "8.6.0",
+    "strapi-plugin-config-sync": "^1.0.0-beta.8",
+    "strapi-plugin-wysiwyg-tui-editor": "^4.0.1",
+    "yarn": "^1.22.17"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "86cc7ec6-10a9-462c-8df1-d8b6f9dbf403"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
