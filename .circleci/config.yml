@@ -22,6 +22,7 @@ jobs:
           name: Deploy Over SSH
           command: |
             ssh $SSH_USER@$SSH_HOST "
+              source .zshrc
               cd ~/blogs-cms 
               git pull
               yarn install
