@@ -25,6 +25,7 @@ jobs:
               source .zshrc
               cd ~/blogs-cms 
               git pull
+              export NODE_OPTIONS=--max-old-space-size=2048
               yarn install
               yarn build
               pm2 restart blogs-cms"
