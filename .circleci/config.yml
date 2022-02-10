@@ -22,7 +22,7 @@ jobs:
           name: Deploy Over SSH
           command: |
             ssh $SSH_USER@$SSH_HOST "
-              source .zshrc
+               . /home/foxleigh81/.zshrc
               cd ~/blogs-cms 
               git pull
               export NODE_OPTIONS=--max-old-space-size=2048
