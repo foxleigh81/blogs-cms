@@ -60,7 +60,7 @@ workflows:
       - build:
           filters:
             branches:
-              exclude: master
+              excludes: master
   deploy:
     jobs:
       - build
