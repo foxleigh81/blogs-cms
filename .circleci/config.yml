@@ -58,8 +58,11 @@ workflows:
   build:
     jobs:
       - build
+      filters:
+        exclude: master
   deploy:
     jobs:
+      - build
       - deploy:
           requires:
             - build
