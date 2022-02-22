@@ -58,8 +58,9 @@ workflows:
   build:
     jobs:
       - build
-      filters:
-        exclude: master
+        filters:
+          branches:
+            exclude: master
   deploy:
     jobs:
       - build
