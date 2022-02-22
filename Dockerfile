@@ -5,7 +5,7 @@ WORKDIR /srv/app
 COPY package*.json .
 COPY yarn.lock .
 
-RUN yarn install
+RUN yarn install --production --platform=linux --arch=x64
 
 COPY . .
 
