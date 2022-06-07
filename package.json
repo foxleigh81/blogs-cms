@@ -14,7 +14,7 @@
     "@strapi/plugin-i18n": "4.0.6",
     "@strapi/plugin-users-permissions": "4.0.6",
     "@strapi/provider-upload-cloudinary": "^4.0.6",
-    "@strapi/strapi": "4.0.6",
+    "@strapi/strapi": "4.1.9",
     "add": "^2.0.6",
     "dotenv": "^14.3.2",
     "pg": "8.6.0",
